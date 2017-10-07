@@ -99,7 +99,7 @@ int main(){
             csfml_start_play("../music/game_over.wav");
             csfml_gameOver_desenhar(janela);
             if(sfKeyboard_isKeyPressed(sfKeyR)){
-                cenario->tam_nave = (Par){45, 45};
+                cenario->tam_nave = (Par) {45, 45};
                 cenario->nave = nave_criar(cenario->tam_nave);
                 cenario->qtd_tiros = 0;
                 cenario->qtd_aliens = 0;
@@ -137,7 +137,7 @@ void main_iniciar_elementos(){
     (void) tempoSom;
 
     //BACKGROUND
-    tbackground = sfTexture_createFromFile("../imagens/background.png", NULL);
+    tbackground = sfTexture_createFromFile("../images/background.png", NULL);
     sbackground = sfSprite_create();
     sfSprite_setTexture(sbackground,tbackground,0);
 
@@ -150,30 +150,30 @@ void main_iniciar_elementos(){
 //        i++;
 //    }
 
-    tnave[0] = sfTexture_createFromFile("../imagens/nave_final0.png", NULL);
+    tnave[0] = sfTexture_createFromFile("../images/nave_final0.png", NULL);
     snave[0] = sfSprite_create();
     sfSprite_setTexture(snave[0],tnave[0],0);
 
-    tnave[1] = sfTexture_createFromFile("../imagens/nave_final1.png", NULL);
+    tnave[1] = sfTexture_createFromFile("../images/nave_final1.png", NULL);
     snave[1] = sfSprite_create();
     sfSprite_setTexture(snave[1],tnave[1],0);
 
-    tnave[2] = sfTexture_createFromFile("../imagens/nave_final2.png", NULL);
+    tnave[2] = sfTexture_createFromFile("../images/nave_final2.png", NULL);
     snave[2] = sfSprite_create();
     sfSprite_setTexture(snave[2],tnave[2],0);
 
     //TIRO
-    ttiro = sfTexture_createFromFile("../imagens/missil.png", NULL);
+    ttiro = sfTexture_createFromFile("../images/missil.png", NULL);
     stiro = sfSprite_create();
     sfSprite_setTexture(stiro,ttiro,0);
 
     //ALIEN
-    talien = sfTexture_createFromFile("../imagens/inimigo.png", NULL);
+    talien = sfTexture_createFromFile("../images/inimigo.png", NULL);
     salien = sfSprite_create();
     sfSprite_setTexture(salien, talien, 0);
 
     //ALIEN MORTO
-    talienMorto = sfTexture_createFromFile("../imagens/inimigo_morto.png", NULL);
+    talienMorto = sfTexture_createFromFile("../images/inimigo_morto.png", NULL);
     salienMorto = sfSprite_create();
     sfSprite_setTexture(salienMorto, talienMorto, 0);
 
